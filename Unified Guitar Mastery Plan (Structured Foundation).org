@@ -1,0 +1,200 @@
+#+TITLE: Unified Guitar Mastery Plan (Structured Foundation)
+#+AUTHOR: 
+#+DATE: 
+
+* Prerequisites Checklist
+Before beginning, ensure you have:
+
+- [ ] Tune the guitar reliably (clip-on tuner or by ear).
+- [ ] Play basic open chords (C, G, D, A, E, Am, Em, Dm) with clear sound.
+- [ ] Perform alternate picking on a single string with a metronome at 60 BPM (quarter notes).
+- [ ] Understand whole steps and half steps on one string.
+
+If any of these are weak, spend 1–2 weeks solidifying them first.
+
+* Philosophy
+Build a unified mental map where roots, intervals, chords, and scales are seen as one interconnected system.
+
+Four pillars:
+- /Physical Execution/ – fretboard mechanics + picking hand control
+- /Mental Visualization/ – pre-hearing and seeing
+- /Aural Confirmation/ – ear training
+- /Rhythmic Integrity/ – subdivision, groove, articulation
+
+Each phase ends with a /Mastery Gate/ – a clear condition for progression.
+
+** Daily Ear Training (Add to Every Warm-up)
+From Phase 0 onward, spend 3–5 minutes on a simple ear-training drill:
+- Use a drone (tonic) or an app like *Functional Ear Trainer*.
+- Identify intervals: play two notes, name the interval.
+- Sing a note, then find it on the guitar.
+
+* Pre-Phase: Fretboard Logic & Octave Shapes
+The goal is to find every instance of any note without counting from open strings.
+
+** Correct Octave Shapes (Ascending)
+Memorize these three reliable shapes to find the same note one octave higher. 
+
+- *Shape 1 (from 6th or 5th string):* Move 2 strings higher, move 2 frets higher.
+  /Example:/ 6th string fret 3 (G) → 4th string fret 5 (G).
+- *Shape 2 (from 4th string):* Move 2 strings higher, move 3 frets higher.
+  /Example:/ 4th string fret 5 (G) → 2nd string fret 8 (G).
+- *Shape 3 (from 3rd string):* Move 2 strings higher, move 3 frets higher.
+  /Example:/ 3rd string fret 5 (C) → 1st string fret 8 (C).
+
+*Note on top strings:* You cannot build an ascending octave shape starting from the 2nd or 1st strings (not enough strings left). Instead, reverse Shapes 2 and 3 to find their /lower/ octaves on the 4th and 3rd strings.
+
+** Drill: Find Every Instance of a Note
+- Pick a random note (e.g., Ab).
+- Find all instances up to the 12th fret using octave shapes.
+- Name string and fret for each aloud.
+- Aim to complete all positions in under 90 seconds.
+- *Picking:* Alternate picking (down-up). Keep wrist loose.
+- *“Without Looking” Technique:* Close your eyes or cover the neck. If lost, stop, visualize the shape, then continue.
+
+** Mastery Gate
+Quickly locate any note on any string without counting up from an open string.
+
+** Practice Schedule (Pre-Phase)
+- *Warm-up (5 min):* Stretch, alternate pick open strings (60 BPM).
+- *Current Focus (10–15 min):* Locate random notes across the neck. Aim for <90 sec.
+- *Creative (5 min):* Play a simple melody ("Twinkle, Twinkle") on one string.
+
+* Phase 0 – Fundamental Geography & Rhythmic Foundation
+** 0.1 – Single-String Scale Mapping
+- *Exercise:* Play the C major scale on each string. Stop at the highest note available before or on the 12th fret.
+- *Speak:* Name notes and the interval pattern (W,W,H,W,W,W,H) aloud.
+- *Tempo:* Target playing tempo is 60 BPM (tap foot on every quarter note). 
+  /Metronome Tip:/ For standard practice, set metronome to 60 BPM. For a "jazz feel" where clicks fall on beats 2 & 4, set your metronome to 30 BPM.
+- *Refinement:* Close eyes, visualize the fretboard. Repeat for G and F major.
+
+** 0.2 – String-Jump Interval Mapping
+- *Exercise:* Find every C on strings 2 through 6 up to the 12th fret. Play its Perfect 4th and Perfect 5th.
+  
+  *Perfect 4th above:* Same fret on the next higher string.
+  - /Exception (Crossing 3rd to 2nd string):/ Move up ONE fret.
+  - /Example:/ 3rd string fret 5 (C) → 2nd string fret 6 (F).
+
+  *Perfect 5th above:* One string higher, move up TWO frets.
+  - /Exception (Crossing 3rd to 2nd string):/ Move up THREE frets.
+  - /Example:/ 3rd string fret 3 (Bb) → 2nd string fret 6 (F).
+
+- *Picking:* Strict alternate picking.
+- *Ear Checkpoint:* Play root, sing the 4th or 5th before playing it.
+
+** Mastery Gate
+Play C, G, F major scales on a single string at 60 BPM without hesitation. Locate any root (strings 2–6) and its 4th/5th within 30 sec.
+
+** Practice Schedule (Phase 0)
+- *Warm-up (5 min):* Quick octave drill + ear training.
+- *Focus (15–20 min):* - Days 1–3: Single-string scales (C, G, F).
+  - Days 4–7: Interval mapping (timed).
+- *Creative (5–10 min):* Compose a 4-bar melody on one string.
+
+* Phase 1 – Roots & Octaves
+** Exercise – Circle of Fourths Octave Drill
+- *Circle order:* C – F – Bb – Eb – Ab – Db – Gb – B – E – A – D – G.
+- For each root, play all octave locations up to the 12th fret using the three shapes.
+- *Rhythm:* Quarter notes at target tempo 60 BPM. Tap foot on all 4 beats. 
+- *Refinement:* Practice in random order (use flashcards).
+
+** Mastery Gate
+Complete all 12 keys in under 10 minutes with clean picking and no hesitation.
+
+** Practice Schedule (Phase 1)
+- *Warm-up (5–10 min):* Single-string scales + 4ths/5ths + ear training.
+- *Focus (20–25 min):* Run circle of fourths drill.
+- *Creative (10 min):* 12-bar blues using only octaves (two-note voicings).
+
+* Phase 2 – CAGED + Intervals
+** 2.1 – CAGED Shapes with Interval Chant
+- *Exercise:* For each CAGED shape (C, A, G, E, D):
+  - Play full chord → play triad (1-3-5) → add 7th.
+- *Chant aloud:* “Root, third, fifth, seventh.”
+- *Refinement:* Practice inversions (start triad from 3rd or 5th).
+- *Ear Checkpoint:* Without playing, name the interval of a physical fret location within the shape.
+
+** 2.2 – Introducing Harmonic Minor
+- *Exercise:* Map A harmonic minor (A B C D E F G#) on one string and in a minor CAGED position. Resolve E7 to Am.
+
+** Mastery Gate
+Name the interval (relative to the root) for any random fret pointed out within a CAGED shape. Play a one-octave harmonic minor scale in A minor.
+
+** Practice Schedule (Phase 2)
+- *Warm-up (5–10 min):* Phase 1 octave drill + ear training.
+- *Focus (20–25 min):*
+  - Wk 1: Major CAGED shapes.
+  - Wk 2: Minor shapes.
+  - Wk 3: Inversions.
+  - Wk 4: Harmonic minor mapping.
+- *Creative (10–15 min):* Harmonize a simple melody using CAGED double-stops.
+
+* Phase 3 – Position Linking & Picking Fluidity
+** 3a – Pivot Note Scale (Economy Picking)
+- *Concept:* Use a note shared by adjacent CAGED positions to bridge them smoothly.
+- *Exercise:* Ascend in the C-shape, hit the shared pivot note (e.g., G on the 1st string), and descend in the A-shape without re-picking the pivot.
+- *Picking:* Economy picking (sweep on string changes).
+
+** 3b – Horizontal Arpeggios
+- *Exercise:* Play triads for C–Am–F–G. Always move to the closest arpeggio shape for the next chord to minimize jumping.
+- *Rhythm:* Eighth notes at 60 BPM.
+
+** Mastery Gate
+Play arpeggios of the progression in eighth notes at 60 BPM without pausing between chord changes.
+
+** Practice Schedule (Phase 3)
+- *Warm-up (5–10 min):* Phase 2 interval chant.
+- *Focus (20–25 min):*
+  - Wk 1: Pivot note scales.
+  - Wk 2: Horizontal arpeggios.
+  - Wk 3: Combine both smoothly.
+- *Creative (10–15 min):* Improvise over a backing track using horizontal triads.
+
+* Phase 4 – Voice Leading & Articulation
+** Exercise – Progressive Chord Connection
+Use a ii–V–I progression (Dm7–G7–Cmaj7) in one neck area. 
+/Target playing tempo:/ 50 BPM.
+
+- *Level A:* Roots only (quarter notes). Explore legato vs. staccato.
+- *Level B:* Roots & 3rds. Add dynamics (e.g., piano on 3rd, forte on root).
+- *Level C:* Full triads (eighth notes), voice-leading to the nearest tone of the next chord.
+- *Level D (Aspirational):* Add chromatic approach notes.
+- *Level E (Aspirational):* Syncopate rhythms (anticipate the next chord on the "and" of beat 4).
+
+** Mastery Gate
+Play Level C cleanly at a target playing tempo of 80 BPM with consistent dynamics and no string noise.
+
+** Practice Schedule (Phase 4)
+- *Warm-up (5–10 min):* Pivot note scales + horizontal arpeggios.
+- *Focus (20–25 min):* Work through Levels A to C.
+- *Creative (10–15 min):* Apply voice-leading to a jazz standard like "All of Me".
+
+* Phase 5 – Chord-Tone Targeting & Transcription
+** 5.1 – Strong-Beat Chord Tones
+- *Exercise:* Improvise over a blues progression. Intentionally land on chord tones exactly on beats 1 and 3. Off-beats can be passing tones.
+- *Refinement:* Use enclosures (half-step above, half-step below → target note).
+
+** 5.2 – Transcription by Ear
+- *Exercise:* Choose a simple, melodic guitar solo. Learn it entirely by ear without tabs.
+
+** Mastery Gate
+Transcribe and perform one 8-to-12 bar chorus accurately at 80% speed. Ensure 90% of strong beats in your own improvisations are chord tones.
+
+* Phase 6 – Integration & Performance
+** Objective
+Perform a full tune (e.g., "Autumn Leaves") combining all pillars: fretboard logic, voice-leading, and phrasing.
+
+** Process
+1. Map chords using CAGED and voice-leading.
+2. Learn melody by ear.
+3. Apply chord-tone targeting in a solo.
+4. Record yourself playing Head → Solo → Head.
+
+** Mastery Gate
+Perform the tune from memory with clear articulation, great time-feel, and no "fishing" for notes.
+
+* General Recommendations
+- *Consistency:* 30 focused minutes daily > 2 hours once a week.
+- *Record regularly:* Listening back reveals timing gaps.
+- *Relaxation:* Scan for tension (shoulders down, wrists straight).
+- *Enjoyment:* End every session with free improvisation or a favorite riff.
