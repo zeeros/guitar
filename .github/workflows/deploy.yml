@@ -1,0 +1,56 @@
+name: Build and Deploy Org Site to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Emacs (cached)
+        uses: purcell/setup-emacs@master
+        with:
+          version: 29.4
+
+      - name: Export Org to HTML
+        run: |
+          emacs --batch "Fingerboard Anatomy.org" \
+            --eval "(org-html-export-to-html)" \
+            --kill
+
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p public
+          cp "Fingerboard Anatomy.html" public/index.html
+          cp -r et-book P1-P8-intervals.html org.css custom.css public/
+          cp manifest.json sw.js icon-192.png icon-512.png public/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
