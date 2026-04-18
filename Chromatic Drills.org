@@ -1,28 +1,33 @@
-* One-String Chromatic Scale[fn:1]
+* One-String Sustained Chromatic Scale[fn:1]
 
-Play a continuous sequence of notes on the 3rd or 4th string between frets 1 and 9.
-Prioritize maximum note sustain and finger independence by ensuring each note rings clearly until the next one begins.
+Chromatic scale on one string (3rd or 4th), frets 1–9.
+Sustain through attacks, no squeak, relaxed thumb.
+No tempo.
+Builds clean control.
 
 [fn:1] [[https://www.youtube.com/watch?v=uyJCnix60EI&t=145s][Video: Tomo Fujita - Beginner Guitar Practice Routine (Chromatic Scale)]]
 
-* String Crossings[fn:2]
+* 4-3-2-1 String Crossing[fn:2]
 
-Cycle through all strings while varying the count from 4 down to 1 note per string.
-This exercise builds spatial awareness to help you navigate string distances without looking at your right hand.
+Across all strings, alternate pick 4, then 3, then 2, then 1 note per string.
+Trains string-distance feel without looking.
 
 [fn:2] [[https://www.youtube.com/watch?v=NgY2S_zoPoc&t=144s][Video: Brandon Acker - GUITAR TIP: Why you need to warm up (Exercise #1: String Crossings)]]
 
 * First Position Chromatic Scale[fn:3]
 
-Cycle through all strings in the first position (frets 1–4) while moving both ascending and descending.
-Focus on hand synchronization and maintaining a consistent, even tone across every note.
+Chromatic scale, first position (frets 1–4), all strings up and down.
+Sync hands, even tone.
+No accents.
 
 [fn:3] [[https://www.youtube.com/watch?v=NgY2S_zoPoc&t=459s][Video: Brandon Acker - GUITAR TIP: Why you need to warm up (Exercise #3: The Chromatic Scale)]]
 
 * Spider Crawls
 
-On the 1st string, play an ascending pattern and shift up one fret at a time until your pinky reaches the 12th fret.
-Play a descending pattern and shift down back to the 1st fret, then repeat for strings 2 through 6.
+On the 1st string, play an ascending pattern.
+Move up one fret after each complete pattern until your pinky reaches the 12th fret.
+Then reverse: play a descending pattern and shift down one fret at a time back to the 1st fret.
+Repeat the entire process on strings 2 through 6.
 
 Variations of these patterns include
 - Linear Run :: Playing the pattern entirely on one string (1-2-3-4).

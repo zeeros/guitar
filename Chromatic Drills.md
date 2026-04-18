@@ -1,42 +1,47 @@
 
 # Table of Contents
 
-1.  [One-String Chromatic Scale](#org10d9def)
-2.  [String Crossings](#org34b67af)
-3.  [First Position Chromatic Scale](#orge88aeac)
-4.  [Spider Crawls](#orgf26f0fe)
+1.  [One-String Sustained Chromatic Scale](#org39a463e)
+2.  [4-3-2-1 String Crossing](#orgd1b7fbc)
+3.  [First Position Chromatic Scale](#orgd13b4c1)
+4.  [Spider Crawls](#org7882475)
 
 
-<a id="org10d9def"></a>
+<a id="org39a463e"></a>
 
-# One-String Chromatic Scale<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+# One-String Sustained Chromatic Scale<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
 
-Play a continuous sequence of notes on the 3rd or 4th string between frets 1 and 9.
-Prioritize maximum note sustain and finger independence by ensuring each note rings clearly until the next one begins.
-
-
-<a id="org34b67af"></a>
-
-# String Crossings<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
-
-Cycle through all strings while varying the count from 4 down to 1 note per string.
-This exercise builds spatial awareness to help you navigate string distances without looking at your right hand.
+Chromatic scale on one string (3rd or 4th), frets 1–9.
+Sustain through attacks, no squeak, relaxed thumb.
+No tempo.
+Builds clean control.
 
 
-<a id="orge88aeac"></a>
+<a id="orgd1b7fbc"></a>
+
+# 4-3-2-1 String Crossing<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+
+Across all strings, alternate pick 4, then 3, then 2, then 1 note per string.
+Trains string-distance feel without looking.
+
+
+<a id="orgd13b4c1"></a>
 
 # First Position Chromatic Scale<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
 
-Cycle through all strings in the first position (frets 1–4) while moving both ascending and descending.
-Focus on hand synchronization and maintaining a consistent, even tone across every note.
+Chromatic scale, first position (frets 1–4), all strings up and down.
+Sync hands, even tone.
+No accents.
 
 
-<a id="orgf26f0fe"></a>
+<a id="org7882475"></a>
 
 # Spider Crawls
 
-On the 1st string, play an ascending pattern and shift up one fret at a time until your pinky reaches the 12th fret.
-Play a descending pattern and shift down back to the 1st fret, then repeat for strings 2 through 6.
+On the 1st string, play an ascending pattern.
+Move up one fret after each complete pattern until your pinky reaches the 12th fret.
+Then reverse: play a descending pattern and shift down one fret at a time back to the 1st fret.
+Repeat the entire process on strings 2 through 6.
 
 Variations of these patterns include
 
