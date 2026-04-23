@@ -1,0 +1,8 @@
+* Skeleton
+
+#+caption: Standard tuning uses perfect 4ths, except for the G–B major 3rd.
+#+caption: e.g. -5/+5 means higher string → −5 frets, lower string → +5 frets.
+| Interval | Perfect 4th | Major 3rd |
+|----------+-------------+-----------|
+| Unison   | -5 / +5     | -4 / +4   |
+| Octave   | +2 / -2     | +3 / -3   |
