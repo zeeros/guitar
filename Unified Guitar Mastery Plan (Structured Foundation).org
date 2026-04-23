@@ -2,58 +2,34 @@
 #+AUTHOR: 
 #+DATE: 
 
-* Prerequisites Checklist
-Before beginning, ensure you have:
+* Daily Ear Training
 
-- [ ] Tune the guitar reliably (clip-on tuner or by ear).
-- [ ] Play basic open chords (C, G, D, A, E, Am, Em, Dm) with clear sound.
-- [ ] Perform alternate picking on a single string with a metronome at 60 BPM (quarter notes).
-- [ ] Understand whole steps and half steps on one string.
-
-If any of these are weak, spend 1–2 weeks solidifying them first.
-
-* Philosophy
-Build a unified mental map where roots, intervals, chords, and scales are seen as one interconnected system.
-
-Four pillars:
-- /Physical Execution/ – fretboard mechanics + picking hand control
-- /Mental Visualization/ – pre-hearing and seeing
-- /Aural Confirmation/ – ear training
-- /Rhythmic Integrity/ – subdivision, groove, articulation
-
-Each phase ends with a /Mastery Gate/ – a clear condition for progression.
-
-** Daily Ear Training (Add to Every Warm-up)
-From Phase 0 onward, spend 3–5 minutes on a simple ear-training drill:
-- Use a drone (tonic) or an app like *Functional Ear Trainer*.
+Spend 3–5 minutes on a simple ear-training drill:
 - Identify intervals: play two notes, name the interval.
 - Sing a note, then find it on the guitar.
 
-* Pre-Phase: Fretboard Logic & Octave Shapes
-The goal is to find every instance of any note without counting from open strings.
+| String Shift       | Standard | G-B crossing |
+|--------------------+----------+--------------|
+| 1 String (Unison)  | ±5 frets | ±4 frets     |
+| 2 Strings (Octave) | ±2 frets | ±3 frets     |
 
-** Correct Octave Shapes (Ascending)
-Memorize these three reliable shapes to find the same note one octave higher. 
+- Drill :: Find every instance of a note on the fretboard.
 
-- *Shape 1 (from 6th or 5th string):* Move 2 strings higher, move 2 frets higher.
-  /Example:/ 6th string fret 3 (G) → 4th string fret 5 (G).
-- *Shape 2 (from 4th string):* Move 2 strings higher, move 3 frets higher.
-  /Example:/ 4th string fret 5 (G) → 2nd string fret 8 (G).
-- *Shape 3 (from 3rd string):* Move 2 strings higher, move 3 frets higher.
-  /Example:/ 3rd string fret 5 (C) → 1st string fret 8 (C).
+** Drill: Find Every Octave of a Note
 
-*Note on top strings:* You cannot build an ascending octave shape starting from the 2nd or 1st strings (not enough strings left). Instead, reverse Shapes 2 and 3 to find their /lower/ octaves on the 4th and 3rd strings.
-
-** Drill: Find Every Instance of a Note
-- Pick a random note (e.g., Ab).
-- Find all instances up to the 12th fret using octave shapes.
-- Name string and fret for each aloud.
-- Aim to complete all positions in under 90 seconds.
-- *Picking:* Alternate picking (down-up). Keep wrist loose.
-- *“Without Looking” Technique:* Close your eyes or cover the neck. If lost, stop, visualize the shape, then continue.
+- Pick a random note.
+- Start from its lowest occurrence (smallest fret, thickest string).
+  Ascend via octave shapes to the 12th fret.
+- Start from its highest occurrence within the 12th fret (largest fret, thinnest string).
+  Descend via octave shapes to open strings.
+- Say each string and fret aloud.
+- Goal: Both directions in under 90 seconds.
+- Pick alternate (down-up).
+  Keep wrist loose.
+- No looking: Close eyes or cover neck. If lost, stop, visualize, then continue.
 
 ** Mastery Gate
-Quickly locate any note on any string without counting up from an open string.
+Given a note, you can quickly locate the same note in every other octave without counting up from an open string.
 
 ** Practice Schedule (Pre-Phase)
 - *Warm-up (5 min):* Stretch, alternate pick open strings (60 BPM).
