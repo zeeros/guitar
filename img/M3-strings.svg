@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="152.98363mm"
+   height="79.852959mm"
+   viewBox="0 0 152.98363 79.852959"
+   version="1.1"
+   id="svg335"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="m3-strings.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview337"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77593294"
+     inkscape:cx="206.84777"
+     inkscape:cy="26.419809"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs332" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.096273,-305.39453)">
+    <g
+       id="diagram-m3"
+       transform="matrix(0.72546405,0,0,0.72546405,-351.75253,236.44234)">
+      <!-- Background Panel -->
+      <!-- Diagram Title -->
+      <!-- String Labels -->
+      <!-- Fretboard Body -->
+      <rect
+         x="580"
+         y="115"
+         width="160"
+         height="70"
+         fill="#fdf6e3"
+         stroke="#e6d6b8"
+         stroke-width="2"
+         rx="4"
+         id="rect89" />
+      <!-- Nut -->
+      <line
+         x1="580"
+         y1="115"
+         x2="580"
+         y2="185"
+         stroke="#333333"
+         stroke-width="4"
+         stroke-linecap="round"
+         id="line91" />
+      <!-- Frets -->
+      <line
+         x1="620"
+         y1="115"
+         x2="620"
+         y2="185"
+         stroke="#cccccc"
+         stroke-width="2"
+         stroke-linecap="round"
+         id="line93" />
+      <line
+         x1="660"
+         y1="115"
+         x2="660"
+         y2="185"
+         stroke="#cccccc"
+         stroke-width="2"
+         stroke-linecap="round"
+         id="line95" />
+      <line
+         x1="700"
+         y1="115"
+         x2="700"
+         y2="185"
+         stroke="#cccccc"
+         stroke-width="2"
+         stroke-linecap="round"
+         id="line97" />
+      <line
+         x1="740"
+         y1="115"
+         x2="740"
+         y2="185"
+         stroke="#cccccc"
+         stroke-width="2"
+         stroke-linecap="round"
+         id="line99" />
+      <!-- Fret Markers (Dots) -->
+      <!-- Strings -->
+      <line
+         x1="580"
+         y1="135"
+         x2="740"
+         y2="135"
+         stroke="#333333"
+         stroke-width="8"
+         stroke-linecap="round"
+         id="line103"
+         style="stroke-width:4.09434;stroke-dasharray:none" />
+      <line
+         x1="580"
+         y1="165"
+         x2="740"
+         y2="165"
+         stroke="#333333"
+         stroke-width="6"
+         stroke-linecap="round"
+         id="line105"
+         style="stroke-width:4.09434;stroke-dasharray:none" />
+      <!-- Interval Label (M3) at the Nut -->
+      <rect
+         x="644.98877"
+         y="140"
+         width="30"
+         height="20"
+         rx="4"
+         fill="#cc5500"
+         id="rect107" />
+      <text
+         x="659.98877"
+         y="154"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#ffffff"
+         id="text109">M3</text>
+      <!-- Note Markers -->
+      <!-- Open Low String -->
+      <circle
+         cx="580"
+         cy="135"
+         r="8"
+         fill="#cc5500"
+         id="circle111" />
+      <text
+         x="580"
+         y="105"
+         font-family="Arial, sans-serif"
+         font-size="14px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#cc5500"
+         id="text115"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.1019px;font-family:sans-serif;-inkscape-font-specification:sans-serif">Open Note</text>
+      <!-- Fretted Unison on High String (4th fret) -->
+      <circle
+         cx="720"
+         cy="165"
+         r="8"
+         fill="#cc5500"
+         id="circle117" />
+      <text
+         x="720"
+         y="105"
+         font-family="Arial, sans-serif"
+         font-size="14px"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#cc5500"
+         id="text121"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.1019px;font-family:sans-serif;-inkscape-font-specification:sans-serif">P1 (Unison)</text>
+      <!-- Connecting Arrow & Text Box -->
+      <!-- Fret Numbers -->
+      <text
+         x="580"
+         y="205"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         fill="#666666"
+         text-anchor="middle"
+         id="text129">0</text>
+      <text
+         x="620"
+         y="205"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         fill="#666666"
+         text-anchor="middle"
+         id="text131">1</text>
+      <text
+         x="660"
+         y="205"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         fill="#666666"
+         text-anchor="middle"
+         id="text133">2</text>
+      <text
+         x="700"
+         y="205"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         fill="#666666"
+         text-anchor="middle"
+         id="text135">3</text>
+      <text
+         x="740"
+         y="205"
+         font-family="Arial, sans-serif"
+         font-size="12px"
+         fill="#666666"
+         text-anchor="middle"
+         id="text137">4</text>
+    </g>
+  </g>
+</svg>

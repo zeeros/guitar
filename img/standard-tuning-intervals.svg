@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="373.38937"
+   viewBox="0 -8 373.38937 228"
+   role="img"
+   version="1.1"
+   id="svg60"
+   height="220"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title2">Standard guitar tuning</title>
+  <desc
+     id="desc4">Six guitar strings arranged horizontally from thickest (bottom) to thinnest (top), labeled with their open string notes: E, A, D, G, B, E. Text between each pair of strings describes the interval between them.</desc>
+  <defs
+     id="defs16">
+    <linearGradient
+       id="string-thick"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#4A4A4A"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#1A1A1A"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="string-thin"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#888888"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#333333"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#string-thin"
+       id="linearGradient767"
+       x1="10.120486"
+       y1="1220.2971"
+       x2="10.120486"
+       y2="1271.678"
+       gradientTransform="matrix(6.7931108,0,0,0.07784989,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#string-thin"
+       id="linearGradient769"
+       x1="11.315048"
+       y1="1528.0537"
+       x2="11.315048"
+       y2="1585.4993"
+       gradientTransform="matrix(6.0759426,0,0,0.08703883,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#string-thin"
+       id="linearGradient771"
+       x1="13.388145"
+       y1="1670.1343"
+       x2="13.388145"
+       y2="1738.1049"
+       gradientTransform="matrix(5.1351089,0,0,0.10298573,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#string-thin"
+       id="linearGradient773"
+       x1="14.312529"
+       y1="1916.5027"
+       x2="14.312529"
+       y2="1989.1663"
+       gradientTransform="matrix(4.8034546,0,0,0.11009638,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#string-thick"
+       id="linearGradient775"
+       x1="15.180729"
+       y1="2132.3086"
+       x2="15.180729"
+       y2="2209.3799"
+       gradientTransform="matrix(4.5287404,0,0,0.11677484,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#string-thick"
+       id="linearGradient777"
+       x1="16.782928"
+       y1="2223.0923"
+       x2="16.782928"
+       y2="2308.2981"
+       gradientTransform="matrix(4.0963998,0,0,0.12909944,-44.396555,-88.980957)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Title -->
+  <!-- String 1: High E (thinnest) -->
+  <rect
+     x="24.353027"
+     y="6.019043"
+     width="349.03635"
+     height="4"
+     rx="1.0576859"
+     fill="url(#string-thin)"
+     opacity="0.85"
+     id="rect22"
+     style="fill:url(#linearGradient767);stroke-width:0.727216" />
+  <text
+     x="7.2778244"
+     y="10.323242"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">E</text>
+  <!-- Interval E→B -->
+  <text
+     x="284.35303"
+     y="33.019043"
+     font-family="sans-serif"
+     font-size="15px"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">P4 (5 semitones)</text>
+  <!-- String 2: B -->
+  <rect
+     x="24.353027"
+     y="44.019043"
+     width="349.03635"
+     height="5"
+     rx="1.0576859"
+     fill="url(#string-thin)"
+     opacity="0.8"
+     id="rect28"
+     style="fill:url(#linearGradient769);stroke-width:0.727216" />
+  <text
+     x="7.3530273"
+     y="48.823242"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">B</text>
+  <!-- Interval B→G -->
+  <text
+     x="284.35303"
+     y="71.019043"
+     font-family="sans-serif"
+     font-size="15px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text32">M3 (4 semitones)</text>
+  <!-- String 3: G -->
+  <rect
+     x="24.353027"
+     y="83.019043"
+     width="349.03635"
+     height="7"
+     rx="1.5865288"
+     fill="url(#string-thin)"
+     opacity="0.7"
+     id="rect34"
+     style="fill:url(#linearGradient771);stroke-width:0.727216" />
+  <text
+     x="7.9384766"
+     y="88.8125"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text36">G</text>
+  <!-- Interval G→D -->
+  <text
+     x="284.35303"
+     y="109.01904"
+     font-family="sans-serif"
+     font-size="15px"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text38">P4 (5 semitones)</text>
+  <!-- String 4: D -->
+  <rect
+     x="24.353027"
+     y="122.01904"
+     width="349.03635"
+     height="8"
+     rx="2.1153717"
+     fill="url(#string-thin)"
+     opacity="0.75"
+     id="rect40"
+     style="fill:url(#linearGradient773);stroke-width:0.727216" />
+  <text
+     x="6.9179688"
+     y="128.32324"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text42">D</text>
+  <!-- Interval D→A -->
+  <text
+     x="284.35303"
+     y="147.01904"
+     font-family="sans-serif"
+     font-size="15px"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text44">P4 (5 semitones)</text>
+  <!-- String 5: A -->
+  <rect
+     x="24.353027"
+     y="160.01904"
+     width="349.03635"
+     height="9"
+     rx="2.1153717"
+     fill="url(#string-thick)"
+     opacity="0.8"
+     id="rect46"
+     style="fill:url(#linearGradient775);stroke-width:0.727216" />
+  <text
+     x="7.3530273"
+     y="166.82324"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text48">A</text>
+  <!-- Interval A→E -->
+  <text
+     x="284.35303"
+     y="185.01904"
+     font-family="sans-serif"
+     font-size="15px"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text50">P4 (5 semitones)</text>
+  <!-- String 6: Low E (thickest) -->
+  <rect
+     x="24.353027"
+     y="198.01904"
+     width="349.03635"
+     height="11"
+     rx="2.6442146"
+     fill="url(#string-thick)"
+     opacity="0.9"
+     id="rect52"
+     style="fill:url(#linearGradient777);stroke-width:0.727216" />
+  <text
+     x="6.9716797"
+     y="206.01904"
+     font-family="sans-serif"
+     font-size="22px"
+     font-weight="500"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text54">E</text>
+  <!-- Legend/explanation -->
+  <metadata
+     id="metadata1102">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Standard guitar tuning</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
