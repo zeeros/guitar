@@ -2,44 +2,18 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="195.06055mm"
-   height="79.852959mm"
-   viewBox="0 0 195.06055 79.852961"
+   width="193.26056mm"
+   height="79.645027mm"
+   viewBox="0 0 193.26056 79.645029"
    version="1.1"
    id="svg6304"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="p4-strings.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview6306"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.77593294"
-     inkscape:cx="368.58855"
-     inkscape:cy="312.52701"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs6301" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-7.4697276,-66.186979)">
+     transform="translate(-8.3421015,-66.439779)">
     <g
        id="diagram-p4"
        transform="matrix(0.72546405,0,0,0.72546405,-83.684174,-2.7652066)">
@@ -127,13 +101,14 @@
          style="stroke-width:4.09434;stroke-dasharray:none" />
       <!-- Interval Label (P4) at the Nut -->
       <rect
-         x="255.63774"
-         y="140"
-         width="30"
-         height="20"
-         rx="4"
+         x="257.22742"
+         y="139.66179"
+         width="27.568562"
+         height="20.67642"
+         rx="3.6758082"
          fill="#0055cc"
-         id="rect46" />
+         id="rect46"
+         style="stroke-width:0.974696" />
       <text
          x="270.63773"
          y="154"
@@ -142,15 +117,19 @@
          font-weight="bold"
          text-anchor="middle"
          fill="#ffffff"
-         id="text48">P4</text>
+         id="text48"
+         style="font-weight:bold;font-size:12.157px;font-family:Arial, sans-serif;text-anchor:middle;fill:#ffffff"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.157px;font-family:Arial, sans-serif;-inkscape-font-specification:'Arial, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           id="tspan1176">P4</tspan></text>
       <!-- Note Markers -->
       <!-- Open Low String -->
       <circle
          cx="160"
-         cy="135"
-         r="8"
+         cy="135.29137"
          fill="#0055cc"
-         id="circle50" />
+         id="circle50"
+         style="stroke-width:0.861518"
+         r="6.8921404" />
       <text
          x="160"
          y="105"
@@ -160,7 +139,7 @@
          text-anchor="middle"
          fill="#0055cc"
          id="text54"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.1019px;font-family:sans-serif;-inkscape-font-specification:sans-serif">Open Note</text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Open Note</text>
       <!-- Fretted Unison on High String (5th fret) -->
       <text
          x="358"
@@ -171,7 +150,7 @@
          text-anchor="middle"
          fill="#0055cc"
          id="text60"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.1019px;font-family:sans-serif;-inkscape-font-specification:sans-serif">P1 (Unison)</text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">P1 (Unison)</text>
       <!-- Connecting Arrow & Text Box -->
       <!-- Fret Numbers -->
       <text
@@ -181,7 +160,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text68">0</text>
+         id="text68"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">0</text>
       <text
          x="204"
          y="205"
@@ -189,7 +169,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text70">1</text>
+         id="text70"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">1</text>
       <text
          x="248"
          y="205"
@@ -197,7 +178,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text72">2</text>
+         id="text72"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">2</text>
       <text
          x="292"
          y="205"
@@ -205,7 +187,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text74">3</text>
+         id="text74"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">3</text>
       <text
          x="336"
          y="205"
@@ -213,7 +196,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text76">4</text>
+         id="text76"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">4</text>
       <text
          x="380"
          y="205"
@@ -221,7 +205,8 @@
          font-size="12px"
          fill="#666666"
          text-anchor="middle"
-         id="text78">5</text>
+         id="text78"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.6432px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">5</text>
     </g>
     <line
        x1="32.390068"
@@ -238,7 +223,7 @@
        cy="116.93636"
        fill="#0055cc"
        id="circle56"
-       style="stroke-width:0.725466"
-       r="5.8037124" />
+       style="stroke-width:0.625002"
+       r="5" />
   </g>
 </svg>

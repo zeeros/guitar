@@ -1,25 +1,25 @@
 
 # Table of Contents
 
-1.  [Fingerboard Navigation](#org7781dc0)
-    1.  [Standard Tuning Intervals](#orgc46ad28)
-    2.  [Unison Notes Across Adjacent Strings](#orga664259)
-2.  [Skeleton](#orgbf047fb)
+1.  [Fingerboard Navigation](#orge08149b)
+    1.  [Standard Tuning Intervals](#org0a52df7)
+    2.  [Unison Notes Across Adjacent Strings](#org98167f7)
+2.  [Skeleton](#org2f738db)
 
 
-<a id="org7781dc0"></a>
+<a id="orge08149b"></a>
 
 # Fingerboard Navigation
 
 
-<a id="orgc46ad28"></a>
+<a id="org0a52df7"></a>
 
 ## Standard Tuning Intervals
 
 ![img](img/standard-tuning-intervals.svg "Most adjacent string pairs are tuned a Perfect 4th (P4) apart. The only exception is G–B, which is a Major 3rd (M3) — and this is intentional: it's what makes standard scales and basic chords playable in all keys.")
 
 
-<a id="orga664259"></a>
+<a id="org98167f7"></a>
 
 ## Unison Notes Across Adjacent Strings
 
@@ -30,7 +30,7 @@ The same pitch (a perfect unison, P1) sits different fret distances apart depend
 ![img](img/M3-strings.svg "Major 3rd (M3) Strings")
 
 
-<a id="orgbf047fb"></a>
+<a id="org2f738db"></a>
 
 # Skeleton
 
