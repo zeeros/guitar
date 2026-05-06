@@ -1,25 +1,15 @@
+#+title: Fingerboard Anatomy
+#+options: num:nil html-style:nil html-postamble:nil
+#+html_head: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#+html_head: <link rel="stylesheet" type="text/css" href="org.css"/>
+#+html_head: <link rel="stylesheet" type="text/css" href="custom.css">
+
 * Fingerboard Navigation
-** Standard Tuning Intervals
 
-#+caption: Most adjacent string pairs are tuned a Perfect 4th (P4) apart. The only exception is G–B, which is a Major 3rd (M3) — and this is intentional: it's what makes standard scales and basic chords playable in all keys.
-[[file:img/standard-tuning-intervals.svg]]
-
-** Unison Notes Across Adjacent Strings
-
-The same pitch (a perfect unison, P1) sits different fret distances apart depending on the string pair interval.
-
-#+caption: Perfect 4th (P4) Strings
-[[file:img/P4-strings.svg]]
+In standard tuning, most adjacent string pairs are tuned a Perfect 4th (P4) apart, with one exception: G–B, which is a Major 3rd (M3).
+This is intentional — it's what makes standard scales and basic chords playable across all keys.
+As a consequence, the fret distance required to play the same interval shifts depending on which string pair you're on.
+Easily locating unison (P1) and octave (P8) intervals helps navigating the fingerboard.
 
 
-#+caption: Major 3rd (M3) Strings
-[[file:img/M3-strings.svg]]
-
-
-* Skeleton
-
-#+caption: e.g. -5/+5 means higher string → −5 frets, lower string → +5 frets.
-| Interval           | P4      | M3      |
-|--------------------+---------+---------|
-| Unison (±1 string) | -5 / +5 | -4 / +4 |
-| Octave (±2 string) | +2 / -2 | +3 / -3 |
+[[file:img/P1-P8-intervals.svg]]
