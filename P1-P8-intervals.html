@@ -8,37 +8,47 @@
       .dot { fill: #a5573e; stroke: white; stroke-width: 1.5; }
       .dot-text { font-size: 10px; fill: white; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
       .interval-label { font-size: 12px; fill: #555; font-weight: bold; text-anchor: start; dominant-baseline: middle; }
-      .radio-label { font-size: 12px; fill: #333; cursor: pointer; }
-      .radio-circle { fill: white; stroke: #555; stroke-width: 1.5; cursor: pointer; }
-      .radio-circle.active { fill: #a5573e; stroke: #a5573e; }
       .string-highlight { fill: #a5573e; stroke: white; stroke-width: 1.5; }
       .string-highlight-text { font-size: 12px; fill: white; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
       .string-base-text { font-size: 12px; fill: #333; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
+
+      .radio-btn circle { fill: white; stroke: #555; stroke-width: 1.5; cursor: pointer; }
+      .radio-btn.active circle { fill: #a5573e; stroke: #a5573e; }
+      .radio-btn text { font-size: 12px; fill: #333; cursor: pointer; }
+      .radio-btn:focus circle { stroke: #a5573e; stroke-width: 2.5; }
+
+      .fretboard { display: none; }
+      .fretboard.active { display: block; }
+      .highlights { display: none; }
+      .highlights.active { display: block; }
+      .pattern { display: none; }
+      .pattern.active { display: block; }
     </style>
   </defs>
 
-  <!-- Radio buttons with equal spacing between labels -->
-  <g transform="translate(0, 0)">
-    <!-- P1 -->
-    <circle cx="40" cy="30" r="6" class="radio-circle" id="radio-adjp1" onclick="setActive('adjp1')"/>
-    <text x="55" y="30" class="radio-label" dominant-baseline="middle" onclick="setActive('adjp1')">P1</text>
+  <g role="radiogroup" aria-label="Select interval pattern">
+    <g role="radio" id="radio-adjp1" aria-checked="true" aria-labelledby="label-adjp1" tabindex="0" class="radio-btn active">
+      <circle cx="40" cy="30" r="6"/>
+      <text id="label-adjp1" x="55" y="30" dominant-baseline="middle">P1</text>
+    </g>
 
-    <!-- P8 (Adjacent) -->
-    <circle cx="102" cy="30" r="6" class="radio-circle" id="radio-adjp8" onclick="setActive('adjp8')"/>
-    <text x="117" y="30" class="radio-label" dominant-baseline="middle" onclick="setActive('adjp8')">P8 (Adjacent)</text>
+    <g role="radio" id="radio-adjp8" aria-checked="false" aria-labelledby="label-adjp8" tabindex="-1" class="radio-btn">
+      <circle cx="102" cy="30" r="6"/>
+      <text id="label-adjp8" x="117" y="30" dominant-baseline="middle">P8 (Adjacent)</text>
+    </g>
 
-    <!-- P8 (Skip-1) -->
-    <circle cx="234" cy="30" r="6" class="radio-circle" id="radio-skipone" onclick="setActive('skip-one')"/>
-    <text x="249" y="30" class="radio-label" dominant-baseline="middle" onclick="setActive('skip-one')">P8 (Skip-1)</text>
+    <g role="radio" id="radio-skip-one" aria-checked="false" aria-labelledby="label-skip-one" tabindex="-1" class="radio-btn">
+      <circle cx="234" cy="30" r="6"/>
+      <text id="label-skip-one" x="249" y="30" dominant-baseline="middle">P8 (Skip-1)</text>
+    </g>
 
-    <!-- P8 (Skip-2) -->
-    <circle cx="361" cy="30" r="6" class="radio-circle" id="radio-skiptwo" onclick="setActive('skip-two')"/>
-    <text x="376" y="30" class="radio-label" dominant-baseline="middle" onclick="setActive('skip-two')">P8 (Skip-2)</text>
+    <g role="radio" id="radio-skip-two" aria-checked="false" aria-labelledby="label-skip-two" tabindex="-1" class="radio-btn">
+      <circle cx="361" cy="30" r="6"/>
+      <text id="label-skip-two" x="376" y="30" dominant-baseline="middle">P8 (Skip-2)</text>
+    </g>
   </g>
 
-  <!-- ========== FRETBOARD LAYOUTS ========== -->
-
-  <g id="fretboard-full">
+  <g id="fretboard-full" class="fretboard">
     <rect x="80" y="80" width="360" height="200" class="wood-bg" rx="2"/>
     <g stroke="#aaa" stroke-width="2.5">
       <line x1="80" y1="80" x2="80" y2="280" class="nut"/>
@@ -78,7 +88,7 @@
     </g>
   </g>
 
-  <g id="fretboard-mid" visibility="hidden">
+  <g id="fretboard-mid" class="fretboard">
     <rect x="80" y="80" width="225" height="200" class="wood-bg" rx="2"/>
     <g stroke="#aaa" stroke-width="2.5">
       <line x1="80" y1="80" x2="80" y2="280" class="nut"/>
@@ -114,7 +124,7 @@
     </g>
   </g>
 
-  <g id="fretboard-short" visibility="hidden">
+  <g id="fretboard-short" class="fretboard">
     <rect x="80" y="80" width="135" height="200" class="wood-bg" rx="2"/>
     <g stroke="#aaa" stroke-width="2.5">
       <line x1="80" y1="80" x2="80" y2="280" class="nut"/>
@@ -147,96 +157,53 @@
     </g>
   </g>
 
-  <!-- ========== OPEN-STRING HIGHLIGHT GROUPS ========== -->
-  <g id="highlights-adjp1" visibility="visible">
+  <g id="highlights-adjp1" class="highlights">
     <circle cx="45" cy="124" r="12" class="string-highlight"/>
     <text x="45" y="124" class="string-highlight-text">B3</text>
     <circle cx="45" cy="244" r="12" class="string-highlight"/>
     <text x="45" y="244" class="string-highlight-text">A2</text>
   </g>
 
-  <g id="highlights-adjp8" visibility="hidden">
+  <g id="highlights-adjp8" class="highlights">
     <circle cx="45" cy="164" r="12" class="string-highlight"/>
     <text x="45" y="164" class="string-highlight-text">G3</text>
     <circle cx="45" cy="284" r="12" class="string-highlight"/>
     <text x="45" y="284" class="string-highlight-text">E2</text>
   </g>
 
-  <g id="highlights-skipone" visibility="hidden">
+  <g id="highlights-skipone" class="highlights">
     <circle cx="45" cy="204" r="12" class="string-highlight"/>
     <text x="45" y="204" class="string-highlight-text">D3</text>
     <circle cx="45" cy="284" r="12" class="string-highlight"/>
     <text x="45" y="284" class="string-highlight-text">E2</text>
   </g>
 
-  <g id="highlights-skiptwo" visibility="hidden">
+  <g id="highlights-skiptwo" class="highlights">
     <circle cx="45" cy="124" r="12" class="string-highlight"/>
     <text x="45" y="124" class="string-highlight-text">B3</text>
     <circle cx="45" cy="164" r="12" class="string-highlight"/>
     <text x="45" y="164" class="string-highlight-text">G3</text>
   </g>
 
-  <!-- ========== PATTERN GROUPS ========== -->
-  <g id="adjp1" visibility="visible">
+  <g id="adjp1" class="pattern">
     <circle cx="282.5" cy="280" r="12" class="dot"/><text x="282.5" y="280" class="dot-text">A2</text>
     <circle cx="237.5" cy="160" r="12" class="dot"/><text x="237.5" y="160" class="dot-text">B3</text>
   </g>
 
-  <g id="adjp8" visibility="hidden">
+  <g id="adjp8" class="pattern">
     <circle cx="372.5" cy="240" r="12" class="dot"/><text x="372.5" y="240" class="dot-text">E3</text>
     <circle cx="417.5" cy="120" r="12" class="dot"/><text x="417.5" y="120" class="dot-text">G4</text>
   </g>
 
-  <g id="skip-one" visibility="hidden">
+  <g id="skip-one" class="pattern">
     <circle cx="147.5" cy="200" r="12" class="dot"/><text x="147.5" y="200" class="dot-text">E3</text>
     <circle cx="192.5" cy="120" r="12" class="dot"/><text x="192.5" y="120" class="dot-text">D4</text>
   </g>
 
-  <g id="skip-two" visibility="hidden">
+  <g id="skip-two" class="pattern">
     <circle cx="192.5" cy="280" r="12" class="dot"/><text x="192.5" y="280" class="dot-text">G2</text>
     <circle cx="147.5" cy="240" r="12" class="dot"/><text x="147.5" y="240" class="dot-text">B2</text>
   </g>
 
-  <script type="text/javascript"><![CDATA[
-    function setActive(selected) {
-      var groups = ['adjp1', 'adjp8', 'skip-one', 'skip-two'];
-      for (var i = 0; i < groups.length; i++) {
-        var g = document.getElementById(groups[i]);
-        if (g) g.setAttribute('visibility', groups[i] === selected ? 'visible' : 'hidden');
-      }
-      var highlightId = 'highlights-' + selected.replace('-', '');
-      var highlights = ['highlights-adjp1', 'highlights-adjp8', 'highlights-skipone', 'highlights-skiptwo'];
-      for (var i = 0; i < highlights.length; i++) {
-        var h = document.getElementById(highlights[i]);
-        if (h) h.setAttribute('visibility', highlights[i] === highlightId ? 'visible' : 'hidden');
-      }
-      var full = document.getElementById('fretboard-full');
-      var mid = document.getElementById('fretboard-mid');
-      var short = document.getElementById('fretboard-short');
-      if (selected === 'adjp8') {
-        full.setAttribute('visibility', 'visible');
-        mid.setAttribute('visibility', 'hidden');
-        short.setAttribute('visibility', 'hidden');
-      } else if (selected === 'adjp1') {
-        full.setAttribute('visibility', 'hidden');
-        mid.setAttribute('visibility', 'visible');
-        short.setAttribute('visibility', 'hidden');
-      } else {
-        full.setAttribute('visibility', 'hidden');
-        mid.setAttribute('visibility', 'hidden');
-        short.setAttribute('visibility', 'visible');
-      }
-      var radios = ['radio-adjp1', 'radio-adjp8', 'radio-skipone', 'radio-skiptwo'];
-      for (var i = 0; i < radios.length; i++) {
-        var r = document.getElementById(radios[i]);
-        if (r) {
-          if (radios[i] === 'radio-' + selected.replace('-', ''))
-            r.setAttribute('class', 'radio-circle active');
-          else
-            r.setAttribute('class', 'radio-circle');
-        }
-      }
-    }
-    setActive('adjp1');
-  ]]></script>
+  <script type="text/javascript" src="diagram.js"></script>
 </svg>
