@@ -17,4 +17,4 @@ With unison (P1) and octave (P8) as landmarks, any other interval is just a smal
 #+html: <input type="radio" name="interval" value="skip-one" id="radio-skip-one"><label for="radio-skip-one">P8 (Skip-1)</label>
 #+html: <input type="radio" name="interval" value="skip-two" id="radio-skip-two"><label for="radio-skip-two">P8 (Skip-2)</label>
 #+html: </fieldset>
-#+html: <object type="image/svg+xml" data="/img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram showing interval patterns">
+#+html: <object type="image/svg+xml" data="img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram showing interval patterns">
