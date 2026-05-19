@@ -81,6 +81,12 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em;
