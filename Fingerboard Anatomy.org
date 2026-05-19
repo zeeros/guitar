@@ -1,8 +1,8 @@
 #+title: Fingerboard Anatomy
 #+options: num:nil html-style:nil html-postamble:nil
+#+html_head: <meta charset="utf-8">
 #+html_head: <meta name="viewport" content="width=device-width, initial-scale=1.0">
-#+html_head: <link rel="stylesheet" type="text/css" href="org.css"/>
-#+html_head: <link rel="stylesheet" type="text/css" href="custom.css">
+#+html_head: <link rel="stylesheet" type="text/css" href="styles.css"/>
 
 * Fingerboard Navigation
 
