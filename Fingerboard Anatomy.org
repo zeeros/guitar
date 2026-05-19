@@ -11,4 +11,10 @@ This is intentional — it's what makes standard scales and basic chords playabl
 As a consequence, the fret distance required to play the same interval shifts depending on which string pair you're on.
 With unison (P1) and octave (P8) as landmarks, any other interval is just a small offset away — whichever anchor is closest on the neck.
 
-#+html: <object type="image/svg+xml" data="img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram">
+#+html: <fieldset><legend>Select interval pattern</legend>
+#+html: <input type="radio" name="interval" value="adjp1" id="radio-adjp1" checked><label for="radio-adjp1">P1</label>
+#+html: <input type="radio" name="interval" value="adjp8" id="radio-adjp8"><label for="radio-adjp8">P8 (Adjacent)</label>
+#+html: <input type="radio" name="interval" value="skip-one" id="radio-skip-one"><label for="radio-skip-one">P8 (Skip-1)</label>
+#+html: <input type="radio" name="interval" value="skip-two" id="radio-skip-two"><label for="radio-skip-two">P8 (Skip-2)</label>
+#+html: </fieldset>
+#+html: <object type="image/svg+xml" data="img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram showing interval patterns">

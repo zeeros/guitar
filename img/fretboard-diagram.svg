@@ -12,11 +12,6 @@
       .string-highlight-text { font-size: 12px; fill: white; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
       .string-base-text { font-size: 12px; fill: #333; font-weight: bold; text-anchor: middle; dominant-baseline: central; }
 
-      .radio-btn circle { fill: white; stroke: #555; stroke-width: 1.5; cursor: pointer; }
-      .radio-btn.active circle { fill: #a5573e; stroke: #a5573e; }
-      .radio-btn text { font-size: 12px; fill: #333; cursor: pointer; }
-      .radio-btn:focus circle { stroke: #a5573e; stroke-width: 2.5; }
-
       .fretboard { display: none; }
       .fretboard.active { display: block; }
       .highlights { display: none; }
@@ -26,27 +21,6 @@
     </style>
   </defs>
 
-  <g role="radiogroup" aria-label="Select interval pattern">
-    <g role="radio" id="radio-adjp1" aria-checked="true" aria-labelledby="label-adjp1" tabindex="0" class="radio-btn active">
-      <circle cx="40" cy="30" r="6"/>
-      <text id="label-adjp1" x="55" y="30" dominant-baseline="middle">P1</text>
-    </g>
-
-    <g role="radio" id="radio-adjp8" aria-checked="false" aria-labelledby="label-adjp8" tabindex="-1" class="radio-btn">
-      <circle cx="102" cy="30" r="6"/>
-      <text id="label-adjp8" x="117" y="30" dominant-baseline="middle">P8 (Adjacent)</text>
-    </g>
-
-    <g role="radio" id="radio-skip-one" aria-checked="false" aria-labelledby="label-skip-one" tabindex="-1" class="radio-btn">
-      <circle cx="234" cy="30" r="6"/>
-      <text id="label-skip-one" x="249" y="30" dominant-baseline="middle">P8 (Skip-1)</text>
-    </g>
-
-    <g role="radio" id="radio-skip-two" aria-checked="false" aria-labelledby="label-skip-two" tabindex="-1" class="radio-btn">
-      <circle cx="361" cy="30" r="6"/>
-      <text id="label-skip-two" x="376" y="30" dominant-baseline="middle">P8 (Skip-2)</text>
-    </g>
-  </g>
 
   <g id="fretboard-full" class="fretboard">
     <rect x="80" y="80" width="360" height="200" class="wood-bg" rx="2"/>
@@ -205,5 +179,4 @@
     <circle cx="147.5" cy="240" r="12" class="dot"/><text x="147.5" y="240" class="dot-text">B2</text>
   </g>
 
-  <script type="text/javascript" src="../diagram.js"></script>
 </svg>

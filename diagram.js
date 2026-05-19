@@ -7,63 +7,43 @@
     { id: 'skip-one', highlightId: 'highlights-skipone',  fretboardId: 'fretboard-short' },
     { id: 'skip-two', highlightId: 'highlights-skiptwo',  fretboardId: 'fretboard-short' }
   ];
-  var currentIndex = 0;
 
-  function showInterval(index) {
-    if (index < 0 || index >= intervals.length) return;
-    var svg = document.querySelector('svg');
-    if (!svg) return;
+  function getSvgDoc() {
+    var obj = document.querySelector('object[type="image/svg+xml"]');
+    if (!obj) return null;
+    return obj.contentDocument;
+  }
 
-    intervals.forEach(function(interval, i) {
-      var active = i === index;
-      var group = svg.getElementById(interval.id);
-      var highlight = svg.getElementById(interval.highlightId);
-      var fretboard = svg.getElementById(interval.fretboardId);
-      var radio = svg.getElementById('radio-' + interval.id);
+  function showInterval(value) {
+    var doc = getSvgDoc();
+    if (!doc) return;
+
+    intervals.forEach(function(interval) {
+      var active = interval.id === value;
+      var group = doc.getElementById(interval.id);
+      var highlight = doc.getElementById(interval.highlightId);
+      var fretboard = doc.getElementById(interval.fretboardId);
 
       if (group) group.classList.toggle('active', active);
       if (highlight) highlight.classList.toggle('active', active);
       if (fretboard) fretboard.classList.toggle('active', active);
-      if (radio) {
-        radio.setAttribute('aria-checked', String(active));
-        radio.classList.toggle('active', active);
-        radio.setAttribute('tabindex', active ? '0' : '-1');
-      }
     });
-    currentIndex = index;
-  }
-
-  function handleKeydown(e) {
-    var key = e.key;
-    if (key === 'ArrowRight' || key === 'ArrowDown') {
-      e.preventDefault();
-      showInterval((currentIndex + 1) % intervals.length);
-    } else if (key === 'ArrowLeft' || key === 'ArrowUp') {
-      e.preventDefault();
-      showInterval((currentIndex - 1 + intervals.length) % intervals.length);
-    }
   }
 
   function init() {
-    var svg = document.querySelector('svg');
-    if (!svg) return;
-
-    intervals.forEach(function(interval, i) {
-      var radio = svg.getElementById('radio-' + interval.id);
-      if (!radio) return;
-
-      radio.addEventListener('click', function() { showInterval(i); });
-
-      radio.addEventListener('keydown', function(e) {
-        if (e.key === ' ' || e.key === 'Enter') {
-          e.preventDefault();
-          showInterval(i);
-        }
+    var radios = document.querySelectorAll('input[name="interval"]');
+    radios.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        if (this.checked) showInterval(this.value);
       });
     });
-
-    svg.addEventListener('keydown', handleKeydown);
-    showInterval(0);
+    var checked = document.querySelector('input[name="interval"]:checked');
+    if (checked) {
+      var obj = document.querySelector('object[type="image/svg+xml"]');
+      if (obj) {
+        obj.addEventListener('load', function() { showInterval(checked.value); });
+      }
+    }
   }
 
   if (document.readyState === 'loading') {
