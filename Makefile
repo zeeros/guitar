@@ -26,11 +26,11 @@ $(PUBLIC)/index.html: $(HTML_FILE)
 	  --remove-script-type-attributes --remove-tag-whitespace \
 	  --use-short-doctype -o $@ $<
 
-$(HTML_FILE): "$(ORG_FILE)"
-	emacs --batch "$(ORG_FILE)" \
+$(HTML_FILE): $(ORG_FILE)
+	emacs --batch $(ORG_FILE) \
 	  --eval "(org-html-export-to-html)" \
 	  --kill
-	mv "Fingerboard-Anatomy.html" $(HTML_FILE)
+	mv Fingerboard-Anatomy.html $(HTML_FILE)
 
 $(PUBLIC)/styles.css: styles.css
 	mkdir -p $(PUBLIC)
