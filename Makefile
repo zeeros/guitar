@@ -1,4 +1,4 @@
-ORG_FILE  = Fingerboard Anatomy.org
+ORG_FILE  = Fingerboard-Anatomy.org
 HTML_FILE = index.html
 PUBLIC    = public
 
@@ -30,7 +30,7 @@ $(HTML_FILE): "$(ORG_FILE)"
 	emacs --batch "$(ORG_FILE)" \
 	  --eval "(org-html-export-to-html)" \
 	  --kill
-	mv "Fingerboard Anatomy.html" $(HTML_FILE)
+	mv "Fingerboard-Anatomy.html" $(HTML_FILE)
 
 $(PUBLIC)/styles.css: styles.css
 	mkdir -p $(PUBLIC)
