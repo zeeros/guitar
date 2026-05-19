@@ -60,6 +60,10 @@ $(PUBLIC)/%.png: %.png
 	mkdir -p $(PUBLIC)
 	cp $< $@
 
+$(PUBLIC)/%.webp: %.webp
+	mkdir -p $(PUBLIC)
+	cp $< $@
+
 $(PUBLIC)/et-book/%: et-book/%
 	mkdir -p $(dir $@)
 	cp $< $@
