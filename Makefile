@@ -12,9 +12,12 @@ SVGO          = npx svgo
 
 .PHONY: all clean
 
+SVG_SRC = img/fretboard-diagram.svg
+
 all: $(PUBLIC)/index.html \
      $(addprefix $(PUBLIC)/, $(ASSETS) $(ICONS)) \
-     $(PUBLIC)/$(FONTS)
+     $(PUBLIC)/$(FONTS) \
+     $(PUBLIC)/$(SVG_SRC)
 
 $(PUBLIC)/index.html: $(HTML_FILE)
 	mkdir -p $(PUBLIC)
@@ -48,6 +51,10 @@ $(PUBLIC)/sw.js: sw.js
 $(PUBLIC)/manifest.json: manifest.json
 	mkdir -p $(PUBLIC)
 	cp $< $@
+
+$(PUBLIC)/img/%.svg: img/%.svg
+	mkdir -p $(PUBLIC)/img
+	$(SVGO) --multipass -q -o $@ $<
 
 $(PUBLIC)/%.png: %.png
 	mkdir -p $(PUBLIC)

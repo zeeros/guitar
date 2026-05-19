@@ -205,5 +205,5 @@
     <circle cx="147.5" cy="240" r="12" class="dot"/><text x="147.5" y="240" class="dot-text">B2</text>
   </g>
 
-  <script type="text/javascript" src="diagram.js"></script>
+  <script type="text/javascript" src="../diagram.js"></script>
 </svg>

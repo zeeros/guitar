@@ -11,4 +11,4 @@ This is intentional — it's what makes standard scales and basic chords playabl
 As a consequence, the fret distance required to play the same interval shifts depending on which string pair you're on.
 With unison (P1) and octave (P8) as landmarks, any other interval is just a small offset away — whichever anchor is closest on the neck.
 
-#+include: "P1-P8-intervals.html" export html
+#+html: <object type="image/svg+xml" data="img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram">
