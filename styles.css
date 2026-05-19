@@ -169,6 +169,8 @@ body {
   margin: 2% auto;
   font-size: 14px;
   line-height: 1.4em;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   body {
@@ -178,6 +180,29 @@ body {
 @media screen and (min-width: 910px) {
   body {
     width: 900px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 5%;
+    width: auto;
+    margin: 1em 0;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  fieldset label {
+    font-size: 3.2vw;
+    margin: 0 0.3em;
+  }
+  .title {
+    font-size: 7vw;
   }
 }
 
