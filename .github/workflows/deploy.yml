@@ -21,23 +21,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Emacs (cached)
+      - name: Install Emacs
         uses: purcell/setup-emacs@master
         with:
           version: 29.4
 
-      - name: Export Org to HTML
-        run: |
-          emacs --batch "Fingerboard Anatomy.org" \
-            --eval "(org-html-export-to-html)" \
-            --kill
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Prepare deployment directory
+      - name: Build with Make
         run: |
-          mkdir -p public
-          cp "Fingerboard Anatomy.html" public/index.html
-          cp -r et-book P1-P8-intervals.html org.css custom.css public/
-          cp manifest.json sw.js icon-192.png icon-512.png public/
+          npm install -g html-minifier terser
+          make
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
