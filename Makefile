@@ -4,7 +4,7 @@ PUBLIC    = public
 
 ASSETS = styles.css diagram.js manifest.json sw.js offline.html
 FONTS  = et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2
-ICONS  = icon-192.png icon-512.png
+ICONS  = icon-192.webp icon-512.webp
 
 HTML_MINIFIER = npx html-minifier
 TERSER        = npx terser
