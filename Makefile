@@ -54,7 +54,7 @@ $(PUBLIC)/manifest.json: manifest.json
 
 $(PUBLIC)/img/%.svg: img/%.svg
 	mkdir -p $(PUBLIC)/img
-	$(SVGO) --multipass -q -o $@ $<
+	cp $< $@
 
 $(PUBLIC)/%.png: %.png
 	mkdir -p $(PUBLIC)

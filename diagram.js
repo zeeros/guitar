@@ -1,54 +1,86 @@
 (function() {
   'use strict';
 
-  var intervals = [
-    { id: 'adjp1',    highlightId: 'highlights-adjp1',    fretboardId: 'fretboard-mid' },
-    { id: 'adjp8',    highlightId: 'highlights-adjp8',    fretboardId: 'fretboard-full' },
-    { id: 'skip-one', highlightId: 'highlights-skipone',  fretboardId: 'fretboard-short' },
-    { id: 'skip-two', highlightId: 'highlights-skiptwo',  fretboardId: 'fretboard-short' }
-  ];
+  var svgDoc = null;
+  var initialized = false;
 
   function getSvgDoc() {
-    var obj = document.querySelector('object[type="image/svg+xml"]');
-    if (!obj) return null;
-    return obj.contentDocument;
+    return svgDoc;
   }
+
+  window.getSvgDoc = getSvgDoc;
 
   function showInterval(value) {
-    var doc = getSvgDoc();
-    if (!doc) return;
+    if (!svgDoc) return;
 
-    intervals.forEach(function(interval) {
-      var active = interval.id === value;
-      var group = doc.getElementById(interval.id);
-      var highlight = doc.getElementById(interval.highlightId);
-      var fretboard = doc.getElementById(interval.fretboardId);
-
-      if (group) group.classList.toggle('active', active);
-      if (highlight) highlight.classList.toggle('active', active);
-      if (fretboard) fretboard.classList.toggle('active', active);
-    });
-  }
-
-  function init() {
-    var radios = document.querySelectorAll('input[name="interval"]');
-    radios.forEach(function(radio) {
-      radio.addEventListener('change', function() {
-        if (this.checked) showInterval(this.value);
-      });
-    });
-    var checked = document.querySelector('input[name="interval"]:checked');
-    if (checked) {
-      var obj = document.querySelector('object[type="image/svg+xml"]');
-      if (obj) {
-        obj.addEventListener('load', function() { showInterval(checked.value); });
+    try {
+      var groups = svgDoc.querySelectorAll('.fretboard, .highlights, .pattern');
+      for (var i = 0; i < groups.length; i++) {
+        groups[i].classList.remove('active');
       }
+
+      var fb, hl, pt;
+
+      if (value === 'adjp1') {
+        fb = svgDoc.getElementById('fretboard-full');
+        hl = svgDoc.getElementById('highlights-adjp1');
+        pt = svgDoc.getElementById('adjp1');
+      } else if (value === 'adjp8') {
+        fb = svgDoc.getElementById('fretboard-mid');
+        hl = svgDoc.getElementById('highlights-adjp8');
+        pt = svgDoc.getElementById('adjp8');
+      } else if (value === 'skip-one') {
+        fb = svgDoc.getElementById('fretboard-short');
+        hl = svgDoc.getElementById('highlights-skipone');
+        pt = svgDoc.getElementById('skip-one');
+      } else if (value === 'skip-two') {
+        fb = svgDoc.getElementById('fretboard-short');
+        hl = svgDoc.getElementById('highlights-skiptwo');
+        pt = svgDoc.getElementById('skip-two');
+      }
+
+      if (fb) fb.classList.add('active');
+      if (hl) hl.classList.add('active');
+      if (pt) pt.classList.add('active');
+    } catch (e) {
+      console.warn('Fretboard SVG interaction error:', e);
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
+  function init() {
+    if (initialized) return;
+    initialized = true;
+
+    var obj = document.querySelector('object[type="image/svg+xml"]');
+    if (!obj) {
+      console.warn('Fretboard SVG object element not found');
+      return;
+    }
+
+    function onReady() {
+      svgDoc = obj.contentDocument;
+      if (!svgDoc) {
+        console.warn('SVG document not accessible');
+        return;
+      }
+
+      var radios = document.querySelectorAll('input[name="interval"]');
+      for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener('change', function() {
+          if (this.checked) showInterval(this.value);
+        });
+      }
+
+      var checked = document.querySelector('input[name="interval"]:checked');
+      if (checked) showInterval(checked.value);
+    }
+
+    if (obj.contentDocument) {
+      onReady();
+    } else {
+      obj.addEventListener('load', onReady);
+    }
   }
+
+  document.addEventListener('DOMContentLoaded', init);
 })();
