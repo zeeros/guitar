@@ -33,7 +33,7 @@ jobs:
 
       - name: Build with Make
         run: |
-          npm install -g html-minifier terser
+          npm install -g html-minifier terser svgo
           make
 
       - name: Upload artifact

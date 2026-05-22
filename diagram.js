@@ -43,31 +43,20 @@
   function init() {
     if (initialized) return;
     initialized = true;
-    var obj = document.querySelector('object[type="image/svg+xml"]');
-    if (!obj) {
-      console.warn('Fretboard SVG object element not found');
+    var svgElement = document.querySelector('svg');
+    if (!svgElement) {
+      console.warn('Inline SVG not found');
       return;
     }
-    function onReady() {
-      svgDoc = obj.contentDocument;
-      if (!svgDoc) {
-        console.warn('SVG document not accessible');
-        return;
-      }
-      var radios = document.querySelectorAll('input[name="interval"]');
-      for (var i = 0; i < radios.length; i++) {
-        radios[i].addEventListener('change', function() {
-          if (this.checked) window.showInterval(this.value);
-        });
-      }
-      var checked = document.querySelector('input[name="interval"]:checked');
-      if (checked) window.showInterval(checked.value);
+    svgDoc = svgElement;
+    var radios = document.querySelectorAll('input[name="interval"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].addEventListener('change', function() {
+        if (this.checked) window.showInterval(this.value);
+      });
     }
-    if (obj.contentDocument) {
-      onReady();
-    } else {
-      obj.addEventListener('load', onReady);
-    }
+    var checked = document.querySelector('input[name="interval"]:checked');
+    if (checked) window.showInterval(checked.value);
   }
 
   if (document.readyState === 'loading') {

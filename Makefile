@@ -26,11 +26,13 @@ $(PUBLIC)/index.html: $(HTML_FILE)
 	  --remove-script-type-attributes --remove-tag-whitespace \
 	  --use-short-doctype -o $@ $<
 
-$(HTML_FILE): $(ORG_FILE)
+$(HTML_FILE): $(ORG_FILE) img/fretboard-diagram.svg
 	emacs --batch $(ORG_FILE) \
 	  --eval "(org-html-export-to-html)" \
 	  --kill
 	mv Fingerboard-Anatomy.html $(HTML_FILE)
+	# Inline the SVG (replace <object> with the SVG content)
+	perl -0777 -pi -e 's|<object[^>]+fretboard-diagram\.svg[^>]*>.*?</object>|`cat img/fretboard-diagram.svg`|se' $(HTML_FILE)
 
 $(PUBLIC)/styles.css: styles.css
 	mkdir -p $(PUBLIC)
