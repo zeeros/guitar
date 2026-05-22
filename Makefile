@@ -38,7 +38,7 @@ $(PUBLIC)/styles.css: styles.css
 
 $(PUBLIC)/diagram.js: diagram.js
 	mkdir -p $(PUBLIC)
-	$(TERSER) --compress --mangle -o $@ -- $<
+	$(TERSER) --compress passes=2 --mangle reserved=['showInterval','getSvgDoc'] -o $@ -- $<
 
 $(PUBLIC)/offline.html: offline.html
 	mkdir -p $(PUBLIC)
