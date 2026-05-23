@@ -13,14 +13,13 @@ HTML_MINIFIER = npx html-minifier
 TERSER        = npx terser
 SVGO          = npx svgo
 
-.PHONY: all clean
-
-$(SVG_MINIFIED): $(SVG_SRC)
-	$(SVGO) --config svgo.config.mjs --pretty --indent 2 -i $< -o $@
-
+.PHONY: all
 all: $(PUBLIC)/index.html \
      $(addprefix $(PUBLIC)/, $(ASSETS) $(ICONS)) \
      $(PUBLIC)/$(FONTS)
+
+$(SVG_MINIFIED): $(SVG_SRC)
+	$(SVGO) --config svgo.config.mjs --pretty --indent 2 -i $< -o $@
 
 $(PUBLIC)/index.html: $(HTML_FILE)
 	mkdir -p $(PUBLIC)
@@ -69,6 +68,7 @@ $(PUBLIC)/et-book/%: et-book/%
 	mkdir -p $(dir $@)
 	cp $< $@
 
+.PHONY: clean
 clean:
 	rm -rf $(PUBLIC)
 	rm -f $(HTML_FILE) $(SVG_MINIFIED)
