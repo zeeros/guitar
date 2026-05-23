@@ -2,6 +2,11 @@
 #+options: num:nil html-style:nil html-postamble:nil
 #+html_head: <meta charset="utf-8">
 #+html_head: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#+html_head: <link rel="preload" href="et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2" as="font" type="font/woff2" crossorigin>
+#+html_head: <link rel="icon" type="image/webp" sizes="192x192" href="icon-192.webp">
+#+html_head: <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+#+html_head: <link rel="icon" type="image/webp" sizes="512x512" href="icon-512.webp">
+#+html_head: <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 #+html_head: <link rel="stylesheet" type="text/css" href="styles.css"/>
 #+html_head: <script src="diagram.js" defer></script>
 

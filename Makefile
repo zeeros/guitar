@@ -2,9 +2,12 @@ ORG_FILE  = Fingerboard-Anatomy.org
 HTML_FILE = index.html
 PUBLIC    = public
 
+SVG_SRC       = img/fretboard-diagram.svg
+SVG_MINIFIED  = img/fretboard-diagram.min.svg
+
 ASSETS = styles.css diagram.js manifest.json sw.js offline.html
 FONTS  = et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2
-ICONS  = icon-192.webp icon-512.webp
+ICONS  = icon-192.webp icon-512.webp icon-192.png icon-512.png
 
 HTML_MINIFIER = npx html-minifier
 TERSER        = npx terser
@@ -12,12 +15,12 @@ SVGO          = npx svgo
 
 .PHONY: all clean
 
-SVG_SRC = img/fretboard-diagram.svg
+$(SVG_MINIFIED): $(SVG_SRC)
+	$(SVGO) --config svgo.config.mjs --pretty --indent 2 -i $< -o $@
 
 all: $(PUBLIC)/index.html \
      $(addprefix $(PUBLIC)/, $(ASSETS) $(ICONS)) \
-     $(PUBLIC)/$(FONTS) \
-     $(PUBLIC)/$(SVG_SRC)
+     $(PUBLIC)/$(FONTS)
 
 $(PUBLIC)/index.html: $(HTML_FILE)
 	mkdir -p $(PUBLIC)
@@ -26,13 +29,13 @@ $(PUBLIC)/index.html: $(HTML_FILE)
 	  --remove-script-type-attributes --remove-tag-whitespace \
 	  --use-short-doctype -o $@ $<
 
-$(HTML_FILE): $(ORG_FILE) img/fretboard-diagram.svg
+$(HTML_FILE): $(ORG_FILE) $(SVG_MINIFIED)
 	emacs --batch $(ORG_FILE) \
 	  --eval "(org-html-export-to-html)" \
 	  --kill
 	mv Fingerboard-Anatomy.html $(HTML_FILE)
-	# Inline the SVG (replace <object> with the SVG content)
-	perl -0777 -pi -e 's|<object[^>]+fretboard-diagram\.svg[^>]*>.*?</object>|`cat img/fretboard-diagram.svg`|se' $(HTML_FILE)
+	# Inline the minified SVG (replace <object> with the SVG content)
+	perl -0777 -pi -e 's|<object[^>]+fretboard-diagram\.svg[^>]*>.*?</object>|`cat $(SVG_MINIFIED)`|se' $(HTML_FILE)
 
 $(PUBLIC)/styles.css: styles.css
 	mkdir -p $(PUBLIC)
@@ -54,13 +57,9 @@ $(PUBLIC)/manifest.json: manifest.json
 	mkdir -p $(PUBLIC)
 	cp $< $@
 
-$(PUBLIC)/img/%.svg: img/%.svg
-	mkdir -p $(PUBLIC)/img
-	cp $< $@
-
-$(PUBLIC)/%.png: %.png
+$(PUBLIC)/%.png: %.webp
 	mkdir -p $(PUBLIC)
-	cp $< $@
+	convert $< $@
 
 $(PUBLIC)/%.webp: %.webp
 	mkdir -p $(PUBLIC)
@@ -72,4 +71,4 @@ $(PUBLIC)/et-book/%: et-book/%
 
 clean:
 	rm -rf $(PUBLIC)
-	rm -f $(HTML_FILE)
+	rm -f $(HTML_FILE) $(SVG_MINIFIED)

@@ -1,14 +1,18 @@
-const CACHE_NAME = "fretboard-v2";
-const ASSET_CACHE = "fretboard-assets-v2";
+const CACHE_NAME = "fretboard-v3";
+const PRECACHE_URLS = [
+  "./",
+  "./index.html",
+  "./offline.html",
+  "./styles.css",
+  "./diagram.js",
+  "./manifest.json",
+  "./et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2"
+];
 
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache =>
-      cache.addAll([
-        "./",
-        "./index.html",
-        "./offline.html"
-      ])
+      cache.addAll(PRECACHE_URLS)
     )
   );
   self.skipWaiting();
@@ -18,7 +22,7 @@ self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
-        keys.filter(k => k !== CACHE_NAME && k !== ASSET_CACHE)
+        keys.filter(k => k !== CACHE_NAME)
           .map(k => caches.delete(k))
       )
     )
@@ -33,7 +37,7 @@ self.addEventListener("fetch", event => {
   if (url.pathname.endsWith("/index.html") || url.pathname === "/" || url.pathname === "") {
     event.respondWith(networkFirst(request));
   } else {
-    event.respondWith(staleWhileRevalidate(request));
+    event.respondWith(cacheFirstWithRefresh(request));
   }
 });
 
@@ -49,16 +53,24 @@ async function networkFirst(request) {
   }
 }
 
-async function staleWhileRevalidate(request) {
-  const cache = await caches.open(ASSET_CACHE);
-  const cached = await cache.match(request);
-  const fetchPromise = fetch(request).then(response => {
-    if (response && response.status === 200) {
-      cache.put(request, response.clone());
-    }
+async function cacheFirstWithRefresh(request) {
+  const cached = await caches.match(request);
+  if (cached) {
+    fetch(request).then(response => {
+      if (response && response.status === 200) {
+        caches.open(CACHE_NAME).then(cache => cache.put(request, response));
+      }
+    }).catch(() => {});
+    return cached;
+  }
+  try {
+    const response = await fetch(request);
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(request, response.clone());
     return response;
-  }).catch(() => cached);
-  return cached || fetchPromise;
+  } catch {
+    return caches.match("./offline.html");
+  }
 }
 
 self.addEventListener("message", event => {
