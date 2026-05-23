@@ -31,10 +31,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: |
-          npm install -g html-minifier terser svgo
-          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+      - name: Install build tools
+        run: npm install -g html-minifier terser svgo
 
       - name: Build with Make
         run: make
