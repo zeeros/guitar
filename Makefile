@@ -33,8 +33,13 @@ $(HTML_FILE): $(ORG_FILE) $(SVG_MINIFIED)
 	  --eval "(org-html-export-to-html)" \
 	  --kill
 	mv Fingerboard-Anatomy.html $(HTML_FILE)
-	# Inline the minified SVG (replace <object> with the SVG content)
-	perl -0777 -pi -e 's|<object[^>]+fretboard-diagram\.svg[^>]*>.*?</object>|`cat $(SVG_MINIFIED)`|se' $(HTML_FILE)
+	python3 -c "\
+import re, pathlib;\
+html = pathlib.Path('$(HTML_FILE)').read_text();\
+svg  = pathlib.Path('$(SVG_MINIFIED)').read_text();\
+html = re.sub(r'<object\b[^>]*fretboard-diagram[^>]*/?>(?:</object>)?', svg, html);\
+pathlib.Path('$(HTML_FILE)').write_text(html)\
+"
 
 $(PUBLIC)/styles.css: styles.css
 	mkdir -p $(PUBLIC)

@@ -6,8 +6,7 @@ const PRECACHE_URLS = [
   "./styles.css",
   "./diagram.js",
   "./manifest.json",
-  "./et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2",
-  "./img/fretboard-diagram.min.svg"
+  "./et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2"
 ];
 
 self.addEventListener("install", event => {
