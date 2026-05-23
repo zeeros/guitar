@@ -24,7 +24,7 @@ $(SVG_MINIFIED): $(SVG_SRC)
 $(PUBLIC)/index.html: $(HTML_FILE)
 	mkdir -p $(PUBLIC)
 	$(HTML_MINIFIER) --collapse-whitespace --remove-comments \
-	  --remove-optional-tags --remove-redundant-attributes \
+	  --remove-redundant-attributes \
 	  --remove-script-type-attributes --remove-tag-whitespace \
 	  --use-short-doctype -o $@ $<
 
