@@ -17,8 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,6 +26,8 @@ jobs:
         uses: purcell/setup-emacs@master
         with:
           version: 29.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
