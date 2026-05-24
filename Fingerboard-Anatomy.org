@@ -1,6 +1,5 @@
 #+title: Fingerboard Anatomy
-#+options: num:nil html-style:nil html-postamble:nil
-#+HTML_DOCTYPE: html5
+#+options: num:nil html-style:nil html-postamble:nil html-doctype:html5
 #+html_head: <meta charset="utf-8">
 #+html_head: <meta name="viewport" content="width=device-width, initial-scale=1.0">
 #+html_head: <link rel="preload" href="et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2" as="font" type="font/woff2" crossorigin>
