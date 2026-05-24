@@ -38,6 +38,7 @@ $(HTML_FILE): $(ORG_FILE) $(SVG_MINIFIED)
 import re, pathlib;\
 html = pathlib.Path('$(HTML_FILE)').read_text();\
 svg  = pathlib.Path('$(SVG_MINIFIED)').read_text();\
+html = re.sub(r'<\?xml[^?]*\?>\s*', '', html);\
 html = re.sub(r'<object\b[^>]*fretboard-diagram[^>]*/?>(?:</object>)?', svg, html);\
 pathlib.Path('$(HTML_FILE)').write_text(html)\
 "
