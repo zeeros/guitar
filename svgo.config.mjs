@@ -8,7 +8,12 @@ export default {
           removeHiddenElems: {
             displayNone: false,
             isHidden: false
-          }
+          },
+          removeHiddenElems: {
+            displayNone: false,
+            isHidden: false
+          },
+          minifyStyles: false
         }
       }
     }
