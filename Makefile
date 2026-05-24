@@ -30,6 +30,7 @@ $(PUBLIC)/index.html: $(HTML_FILE)
 
 $(HTML_FILE): $(ORG_FILE) $(SVG_MINIFIED)
 	emacs --batch $(ORG_FILE) \
+	  --eval "(setq org-html-xml-declaration nil)" \
 	  --eval "(org-html-export-to-html)" \
 	  --kill
 	mv Fingerboard-Anatomy.html $(HTML_FILE)
