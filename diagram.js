@@ -6,29 +6,24 @@
   window.showInterval = function(value) {
     if (!svgDoc) return;
     try {
-      var groups = svgDoc.querySelectorAll('.fretboard, .highlights, .pattern');
+      var groups = svgDoc.querySelectorAll('.highlights, .pattern');
       for (var i = 0; i < groups.length; i++) {
         groups[i].classList.remove('active');
       }
-      var fb, hl, pt;
+      var hl, pt;
       if (value === 'adjp1') {
-        fb = svgDoc.getElementById('fretboard-full');
         hl = svgDoc.getElementById('highlights-adjp1');
         pt = svgDoc.getElementById('adjp1');
       } else if (value === 'adjp8') {
-        fb = svgDoc.getElementById('fretboard-mid');
         hl = svgDoc.getElementById('highlights-adjp8');
         pt = svgDoc.getElementById('adjp8');
       } else if (value === 'skip-one') {
-        fb = svgDoc.getElementById('fretboard-short');
         hl = svgDoc.getElementById('highlights-skipone');
         pt = svgDoc.getElementById('skip-one');
       } else if (value === 'skip-two') {
-        fb = svgDoc.getElementById('fretboard-short');
         hl = svgDoc.getElementById('highlights-skiptwo');
         pt = svgDoc.getElementById('skip-two');
       }
-      if (fb) fb.classList.add('active');
       if (hl) hl.classList.add('active');
       if (pt) pt.classList.add('active');
     } catch (e) {
