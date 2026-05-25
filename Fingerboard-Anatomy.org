@@ -9,6 +9,7 @@
 #+html_head: <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 #+html_head: <link rel="stylesheet" type="text/css" href="styles.css"/>
 #+html_head: <script src="diagram.js" defer></script>
+#+html_head: <script>navigator.serviceWorker?.register('./sw.js');</script>
 
 * Fingerboard Navigation
 
