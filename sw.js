@@ -6,6 +6,10 @@ const PRECACHE_URLS = [
   "./styles.css",
   "./diagram.js",
   "./manifest.json",
+  "./icon-192.webp",
+  "./icon-512.webp",
+  "./icon-192.png",
+  "./icon-512.png",
   "./et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2"
 ];
 
