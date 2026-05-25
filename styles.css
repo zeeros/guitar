@@ -240,9 +240,14 @@ body {
     h3 {
         font-size: 5vw;
     }
+    .radio-pair {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+    }
     fieldset label {
         font-size: 3.2vw;
-        margin: 0 0.3rem;          /* 0.3em → 0.3rem */
+        margin: 0;
     }
     .title {
         font-size: 7vw;
@@ -477,4 +482,11 @@ fieldset input[type="radio"]:focus + label {
     outline: 2px solid #a5573e;
     outline-offset: 2px;
     border-radius: 2px;
+}
+
+.radio-pair {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
 }

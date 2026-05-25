@@ -18,9 +18,17 @@ As a consequence, the fret distance required to play the same interval shifts de
 With unison (P1) and octave (P8) as landmarks, any other interval is just a small offset away — whichever anchor is closest on the neck.
 
 #+html: <fieldset><legend>Select interval pattern</legend>
+#+html: <div class="radio-pair">
 #+html: <input type="radio" name="interval" value="adjp1" id="radio-adjp1" checked><label for="radio-adjp1">P1</label>
+#+html: </div>
+#+html: <div class="radio-pair">
 #+html: <input type="radio" name="interval" value="adjp8" id="radio-adjp8"><label for="radio-adjp8">P8 (Adjacent)</label>
+#+html: </div>
+#+html: <div class="radio-pair">
 #+html: <input type="radio" name="interval" value="skip-one" id="radio-skip-one"><label for="radio-skip-one">P8 (Skip-1)</label>
+#+html: </div>
+#+html: <div class="radio-pair">
 #+html: <input type="radio" name="interval" value="skip-two" id="radio-skip-two"><label for="radio-skip-two">P8 (Skip-2)</label>
+#+html: </div>
 #+html: </fieldset>
 #+html: <object type="image/svg+xml" data="img/fretboard-diagram.svg" aria-label="Interactive fretboard diagram showing interval patterns"></object>
