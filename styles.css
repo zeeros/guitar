@@ -6,407 +6,475 @@
     font-display: swap;
 }
 
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/* Base root font size – 1rem = 16px (browser default) */
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-  display: block;
-}
-audio, canvas, progress, video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
-[hidden], template {
-  display: none;
-}
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-a:active, a:hover {
-  outline-width: 0;
-}
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-b, strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: .67em 0;
-}
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-small {
-  font-size: 80%;
-}
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -.25em;
-}
-sup {
-  top: -.5em;
-}
-img {
-  border-style: none;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-code, kbd, pre, samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-figure {
-  margin: 1em 40px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-button, input, optgroup, select, textarea {
-  font: inherit;
-  margin: 0;
-}
-optgroup {
-  font-weight: 700;
-}
-button, input {
-  overflow: visible;
-}
-button, select {
-  text-transform: none;
-}
-[type=reset], [type=submit], button, html [type=button] {
-  -webkit-appearance: button;
-}
-[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: .35em .625em .75em;
-}
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-textarea {
-  overflow: auto;
-}
-[type=checkbox], [type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: .54;
-}
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
+    font-size: 100%;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  color: #333;
-  background-color: #fffff8;
-  font-family: "et-book", "Palatino", "Georgia", serif;
-  width: 95%;
-  margin: 2% auto;
-  font-size: 14px;
-  line-height: 1.4em;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
 }
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+[hidden], template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+b, strong {
+    font-weight: inherit;
+    font-weight: bolder;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2rem;       /* 2em → 2rem (32px) */
+    margin: 0.67rem 0;     /* 0.67em → 0.67rem */
+}
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;        /* kept as % */
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25rem;      /* -0.25em → -0.25rem */
+}
+
+sup {
+    top: -0.5rem;          /* -0.5em → -0.5rem */
+}
+
+img {
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1rem;       /* 1em → 1rem */
+}
+
+figure {
+    margin: 1rem 2.5rem;   /* 1em 40px → 1rem 2.5rem (40/16) */
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+
+optgroup {
+    font-weight: 700;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 0.125rem;    /* 2px → 0.125rem */
+    padding: 0.35rem 0.625rem 0.75rem;  /* .35em .625em .75em → rem */
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fffff8;
+    font-family: "et-book", "Palatino", "Georgia", serif;
+    width: 95%;
+    margin: 2% auto;
+    font-size: 1rem;               /* 16px → 1rem */
+    line-height: 1.4;              /* 1.4em → unitless (better) */
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 600px) {
-  body {
-    font-size: 18px;
-  }
+    body {
+        font-size: 1.125rem;       /* 18px → 1.125rem */
+    }
 }
+
 @media screen and (min-width: 910px) {
-  body {
-    width: 900px;
-  }
+    body {
+        width: 56.25rem;           /* 900px → 56.25rem */
+    }
 }
+
 @media screen and (max-width: 600px) {
-  body {
-    padding: 0 5%;
-    width: auto;
-    margin: 1em 0;
-  }
-  h1 {
-    font-size: 8vw;
-  }
-  h2 {
-    font-size: 6vw;
-  }
-  h3 {
-    font-size: 5vw;
-  }
-  fieldset label {
-    font-size: 3.2vw;
-    margin: 0 0.3em;
-  }
-  .title {
-    font-size: 7vw;
-  }
+    body {
+        padding: 0 5%;
+        width: auto;
+        margin: 1rem 0;            /* 1em → 1rem */
+    }
+    h1 {
+        font-size: 8vw;            /* kept vw */
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    fieldset label {
+        font-size: 3.2vw;
+        margin: 0 0.3rem;          /* 0.3em → 0.3rem */
+    }
+    .title {
+        font-size: 7vw;
+    }
 }
 
 ::-moz-selection {
-  background: #d6edff;
+    background: #d6edff;
 }
 ::selection {
-  background: #d6edff;
+    background: #d6edff;
 }
 
 p {
-  margin: 1em auto;
+    margin: 1rem auto;             /* 1em → 1rem */
 }
+
 dl, ol, ul {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .title {
-  margin: .8em auto;
-  color: #000;
+    margin: 0.8rem auto;           /* .8em → 0.8rem */
+    color: #000;
 }
+
 .title, .subtitle {
-  text-align: center;
+    text-align: center;
 }
+
 .subtitle {
-  font-size: 1.1em;
-  line-height: 1.4;
-  font-weight: 700;
-  margin: 1em auto;
+    font-size: 1.1rem;             /* 1.1em → 1.1rem */
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 1rem auto;             /* 1em → 1rem */
 }
 
 a {
-  color: #527d9a;
-  text-decoration: none;
+    color: #527d9a;
+    text-decoration: none;
 }
+
 a:hover {
-  color: #035;
-  border-bottom: 1px dotted;
+    color: #035;
+    border-bottom: 1px dotted;    /* border stays px */
 }
 
 img {
-  max-width: 100%;
-  vertical-align: middle;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #a5573e;
-  line-height: 1em;
+    color: #a5573e;
+    line-height: 1em;
 }
+
 h1, h2, h3 {
-  line-height: 1.4em;
+    line-height: 1.4em;            /* kept as em (relative to each heading’s font‑size) – better left as is */
 }
+
 h4, h5, h6 {
-  font-size: 1em;
+    font-size: 1rem;               /* 1em → 1rem */
 }
+
 @media screen and (min-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 1.3em;
-  }
-  h1, h2, h3 {
-    line-height: 1.4em;
-  }
-  h4, h5, h6 {
-    font-size: 1.1em;
-  }
+    h1 {
+        font-size: 2rem;           /* 2em → 2rem */
+    }
+    h2 {
+        font-size: 1.5rem;         /* 1.5em → 1.5rem */
+    }
+    h3 {
+        font-size: 1.3rem;         /* 1.3em → 1.3rem */
+    }
+    h1, h2, h3 {
+        line-height: 1.4em;
+    }
+    h4, h5, h6 {
+        font-size: 1.1rem;         /* 1.1em → 1.1rem */
+    }
 }
 
 table {
-  margin: 1em auto;
-  border-top: 2px solid;
-  border-collapse: collapse;
+    margin: 1rem auto;             /* 1em → 1rem */
+    border-top: 2px solid;
+    border-collapse: collapse;
 }
+
 table, thead {
-  border-bottom: 2px solid;
+    border-bottom: 2px solid;
 }
+
 table td + td, table th + th {
-  border-left: 1px solid grey;
+    border-left: 1px solid grey;
 }
+
 table tr {
-  border-top: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
 }
+
 td, th {
-  padding: .3em .6em;
-  vertical-align: middle;
+    padding: 0.3rem 0.6rem;       /* .3em .6em → rem */
+    vertical-align: middle;
 }
+
 th.org-center, th.org-left, th.org-right {
-  text-align: center;
+    text-align: center;
 }
+
 td.org-right {
-  text-align: right;
+    text-align: right;
 }
+
 td.org-left {
-  text-align: left;
+    text-align: left;
 }
+
 td.org-center {
-  text-align: center;
+    text-align: center;
 }
 
 blockquote {
-  margin: 1em 2em;
-  padding-left: 1em;
-  border-left: 3px solid #ccc;
+    margin: 1rem 2rem;             /* 1em 2em → 1rem 2rem */
+    padding-left: 1rem;            /* 1em → 1rem */
+    border-left: 3px solid #ccc;
 }
 
 .figure {
-  text-align: center;
+    text-align: center;
 }
 
 .org-src-container {
-  border: 1px solid #ccc;
-  box-shadow: 3px 3px 3px #eee;
-  font-family: Lucida Console, monospace;
-  font-size: 80%;
-  margin: 1em auto;
-  padding: .1em .5em;
-  position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    font-family: Lucida Console, monospace;
+    font-size: 80%;
+    margin: 1rem auto;             /* 1em → 1rem */
+    padding: 0.1rem 0.5rem;       /* .1em .5em → rem */
+    position: relative;
 }
+
 .org-src-container > pre {
-  overflow: auto;
+    overflow: auto;
 }
 
 :not(pre) > code {
-  padding: 2px 5px;
-  margin: auto 1px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-clip: padding-box;
-  color: #333;
-  font-size: 80%;
+    padding: 2px 5px;              /* px kept for fine detail */
+    margin: auto 1px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #333;
+    font-size: 80%;
 }
 
 .org-right {
-  margin-left: auto;
-  margin-right: 0;
-  text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
 }
+
 .org-left {
-  margin-left: 0;
-  margin-right: auto;
-  text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
 }
+
 .org-center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #postamble p, #preamble p {
-  font-size: 90%;
-  margin: .2em;
+    font-size: 90%;
+    margin: 0.2rem;                /* .2em → 0.2rem */
 }
+
 #org-div-home-and-up {
-  font-size: 70%;
-  text-align: right;
-  white-space: nowrap;
+    font-size: 70%;
+    text-align: right;
+    white-space: nowrap;
 }
 
 fieldset {
-  border: none;
-  margin: 1em 0;
-  padding: 0;
-  text-align: center;
+    border: none;
+    margin: 1rem 0;                /* 1em → 1rem */
+    padding: 0;
+    text-align: center;
 }
+
 fieldset legend {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 0.5em;
+    font-size: 0.9rem;             /* 0.9em → 0.9rem */
+    color: #555;
+    margin-bottom: 0.5rem;         /* 0.5em → 0.5rem */
 }
+
 fieldset label {
-  display: inline-block;
-  margin: 0 0.5em;
-  cursor: pointer;
-  font-size: 0.9em;
+    display: inline-block;
+    margin: 0 0.5rem;              /* 0.5em → 0.5rem */
+    cursor: pointer;
+    font-size: 0.9rem;             /* 0.9em → 0.9rem */
 }
+
 fieldset input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
-  border: 1.5px solid #555;
-  border-radius: 50%;
-  margin: 0 4px 0 0;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
-  cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 12px;                   /* keep px for small UI element */
+    height: 12px;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
 }
+
 fieldset input[type="radio"]:checked {
-  background: #a5573e;
-  border-color: #a5573e;
+    background: #a5573e;
+    border-color: #a5573e;
 }
+
 fieldset input[type="radio"]:focus {
-  outline: none;
+    outline: none;
 }
+
 fieldset input[type="radio"]:focus + label {
-  outline: 2px solid #a5573e;
-  outline-offset: 2px;
-  border-radius: 2px;
+    outline: 2px solid #a5573e;
+    outline-offset: 2px;
+    border-radius: 2px;
 }
