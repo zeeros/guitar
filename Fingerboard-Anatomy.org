@@ -1,4 +1,5 @@
 #+title: Fingerboard Anatomy
+#+language: en
 #+options: num:nil html-style:nil html-postamble:nil html-doctype:html5
 #+html_head: <meta charset="utf-8">
 #+html_head: <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 #+html_head: <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 #+html_head: <link rel="stylesheet" type="text/css" href="styles.css"/>
 #+html_head: <script src="diagram.js" defer></script>
+#+html_head: <meta name="theme-color" content="#a5573e">
 #+html_head: <script>navigator.serviceWorker?.register('./sw.js');</script>
 
 * Fingerboard Navigation
