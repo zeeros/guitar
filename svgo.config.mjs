@@ -9,10 +9,6 @@ export default {
             displayNone: false,
             isHidden: false
           },
-          removeHiddenElems: {
-            displayNone: false,
-            isHidden: false
-          },
           minifyStyles: false
         }
       }
