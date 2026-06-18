@@ -12,17 +12,17 @@
       }
       var hl, pt;
       if (value === 'adjp1') {
-        hl = svgDoc.getElementById('highlights-adjp1');
-        pt = svgDoc.getElementById('adjp1');
+        hl = document.getElementById('highlights-adjp1');
+        pt = document.getElementById('adjp1');
       } else if (value === 'adjp8') {
-        hl = svgDoc.getElementById('highlights-adjp8');
-        pt = svgDoc.getElementById('adjp8');
+        hl = document.getElementById('highlights-adjp8');
+        pt = document.getElementById('adjp8');
       } else if (value === 'skip-one') {
-        hl = svgDoc.getElementById('highlights-skipone');
-        pt = svgDoc.getElementById('skip-one');
+        hl = document.getElementById('highlights-skipone');
+        pt = document.getElementById('skip-one');
       } else if (value === 'skip-two') {
-        hl = svgDoc.getElementById('highlights-skiptwo');
-        pt = svgDoc.getElementById('skip-two');
+        hl = document.getElementById('highlights-skiptwo');
+        pt = document.getElementById('skip-two');
       }
       if (hl) hl.classList.add('active');
       if (pt) pt.classList.add('active');
