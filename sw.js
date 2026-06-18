@@ -1,4 +1,4 @@
-const CACHE_NAME = "fretboard-v5";
+const CACHE_NAME = "fretboard-{{VERSION}}";
 const PRECACHE_URLS = [
   "./",
   "./index.html",

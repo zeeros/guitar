@@ -9,6 +9,10 @@ ASSETS = styles.css diagram.js manifest.json sw.js offline.html
 FONTS  = et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2
 ICONS  = icon-192.webp icon-512.webp icon-192.png icon-512.png
 
+PRECACHE_SRCS = $(ORG_FILE) $(SVG_SRC) svgo.config.mjs offline.html \
+                styles.css diagram.js manifest.json $(FONTS) \
+                icon-192.webp icon-512.webp Makefile sw.js
+
 HTML_MINIFIER = npx html-minifier
 TERSER        = npx terser
 SVGO          = npx svgo
@@ -55,9 +59,10 @@ $(PUBLIC)/offline.html: offline.html
 	mkdir -p $(PUBLIC)
 	$(HTML_MINIFIER) --collapse-whitespace --remove-comments -o $@ $<
 
-$(PUBLIC)/sw.js: sw.js
+$(PUBLIC)/sw.js: sw.js $(PRECACHE_SRCS)
 	mkdir -p $(PUBLIC)
-	$(TERSER) --compress --mangle -o $@ -- $<
+	VERSION=$$(sha256sum $(PRECACHE_SRCS) | sha256sum | head -c 10) && \
+	sed 's/{{VERSION}}/'"$$VERSION"'/g' $< | $(TERSER) --compress --mangle -o $@
 
 $(PUBLIC)/manifest.json: manifest.json
 	mkdir -p $(PUBLIC)
