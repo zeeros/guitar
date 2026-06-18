@@ -38,9 +38,9 @@
   function init() {
     if (initialized) return;
     initialized = true;
-    var svgElement = document.querySelector('svg');
+    var svgElement = document.getElementById('fretboard');
     if (!svgElement) {
-      console.warn('Inline SVG not found');
+      console.error('Fretboard SVG (#fretboard) not found');
       return;
     }
     svgDoc = svgElement;
